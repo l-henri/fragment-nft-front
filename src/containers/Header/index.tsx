@@ -21,8 +21,8 @@ export const Header: React.FC = () => {
   const addressEllipsed = ellipse(address);
 
   return (
-    <AntHeader className="root">
-      <ButtonText className="title">EthCC Memorabilia 2019</ButtonText>
+    <AntHeader className="header">
+      <ButtonText className="title">ETHCC Memorabilia 2019</ButtonText>
       <ButtonText className="btn">Home</ButtonText>
       <ButtonText className="btn">Fragments</ButtonText>
       <Space className="right-items" size="large">

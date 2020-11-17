@@ -1,39 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Layout, Typography } from 'antd';
+import Grid from '@assets/main-grill.svg';
 import './index.less';
-import { Layout, Tooltip, Space, Typography } from 'antd';
-import { ButtonText } from '@components/ButtonText';
-import MoonIcon from '@assets/moon.svg';
-import SunIcon from '@assets/little-sun-black.svg';
-import AccountIcon from '@assets/account.svg';
-import { ellipse } from '@utils';
 
-const { Header: AntHeader } = Layout;
-const { Text } = Typography;
+const { Content } = Layout;
+const { Title, Text, Paragraph } = Typography;
 
 export const Header: React.FC = () => {
-  const [dark, toggleDark] = useState<boolean>(false);
-
-  const toggleTheme = () => {
-    toggleDark(!dark);
-  };
-
-  const address = '0x7377405B8110b4C3B51AcC5743a802784c3c3FDf';
-  const addressEllipsed = ellipse(address);
-
   return (
-    <AntHeader className="header">
-      <ButtonText className="title">ETHCC Memorabilia 2019</ButtonText>
-      <ButtonText className="btn">Home</ButtonText>
-      <ButtonText className="btn">Fragments</ButtonText>
-      <Space className="right-items" size="large">
-        <ButtonText size="small" onClick={toggleTheme}>
-          {dark ? <img src={SunIcon} alt="light icon" /> : <img src={MoonIcon} alt="dark icon" />}
-        </ButtonText>
-        <Tooltip title={address} placement="bottom">
-          <img src={AccountIcon} alt="account" />
-          <Text className="account-text">{addressEllipsed}</Text>
-        </Tooltip>
-      </Space>
-    </AntHeader>
+    <Content className="header">
+      <div className="welcome-container">
+        <Title className="welcome-title">Welcome</Title>
+        <Paragraph className="welcome-text">
+          If you have been at ETHCC 2019
+          <br />
+          or you simply enjoy the event?
+        </Paragraph>
+        <Text className="welcome-text">Claim your token now!</Text>
+      </div>
+      <img className="img-grid" src={Grid} alt="Grid" />
+    </Content>
   );
 };

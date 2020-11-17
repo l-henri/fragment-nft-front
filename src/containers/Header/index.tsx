@@ -7,7 +7,7 @@ import SunIcon from '@assets/little-sun-black.svg';
 import AccountIcon from '@assets/account.svg';
 import { ellipse } from '@utils';
 
-const { Header: TopBar } = Layout;
+const { Header: AntHeader } = Layout;
 const { Text } = Typography;
 
 export const Header: React.FC = () => {
@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
   const addressEllipsed = ellipse(address);
 
   return (
-    <TopBar className="root">
+    <AntHeader className="root">
       <ButtonText className="title">EthCC Memorabilia 2019</ButtonText>
       <ButtonText className="btn">Home</ButtonText>
       <ButtonText className="btn">Fragments</ButtonText>
@@ -34,6 +34,6 @@ export const Header: React.FC = () => {
           <Text className="account-text">{addressEllipsed}</Text>
         </Tooltip>
       </Space>
-    </TopBar>
+    </AntHeader>
   );
 };

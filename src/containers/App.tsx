@@ -2,16 +2,13 @@ import React from 'react';
 import './App.less';
 import { Layout } from 'antd';
 import { Header } from './Header';
-
-const { Content } = Layout;
+import { Content } from './Content';
 
 const App: React.FC = () => {
   return (
     <Layout className="layout">
       <Header />
-      <Content style={{ padding: '20px 50px' }}>
-        <div className="site-layout-content">Content</div>
-      </Content>
+      <Content />
     </Layout>
   );
 };

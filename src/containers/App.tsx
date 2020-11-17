@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.less';
 import { Layout } from 'antd';
-import { Header } from '@components/Header';
+import { Header } from './Header';
 
 const { Content } = Layout;
 

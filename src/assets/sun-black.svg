@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="625.858" height="302.248" viewBox="0 0 625.858 302.248">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_29" data-name="Path 29" d="M0,0H625.858V302.248H0Z" transform="translate(-4960.206 2423)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip">
+      <use xlink:href="#fill"/>
+    </clipPath>
+  </defs>
+  <g id="sun-black" transform="translate(4960.206 -2423)" clip-path="url(#clip-path)">
+    <g id="Group_24" data-name="Group 24" transform="translate(-4962.954 2434.655)">
+      <g id="Group_23" data-name="Group 23" transform="translate(83.065 89.576)">
+        <g id="Group_21" data-name="Group 21" transform="translate(36 1)">
+          <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(0 -0.231)" fill="none" stroke="#fff" stroke-width="1">
+            <circle cx="200" cy="200" r="200" stroke="none"/>
+            <circle cx="200" cy="200" r="199.5" fill="none"/>
+          </g>
+          <g id="Rectangle_46" data-name="Rectangle 46" transform="translate(0 198.769)" fill="none" stroke="#fff" stroke-width="3">
+            <rect id="fill" width="400" height="1" stroke="none"/>
+            <path d="M0,-0.5h400M398.5,0v1M400,1.5h-400M1.5,1v-1" fill="none" clip-path="url(#clip)"/>
+          </g>
+        </g>
+      </g>
+      <line id="Line_14" data-name="Line 14" x1="67" transform="translate(17.193 290.345)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_15" data-name="Line 15" x1="58" y1="37" transform="translate(64.193 123.963)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_16" data-name="Line 16" x1="63" y1="14" transform="translate(32.193 210.283)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_17" data-name="Line 17" x1="43" y1="49" transform="translate(126.602 59)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_18" data-name="Line 18" x1="24" y1="55" transform="translate(212.815 17)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_19" data-name="Line 19" y1="59" transform="translate(316.382)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_20" data-name="Line 20" y1="55" x2="24" transform="translate(395.95 17)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_21" data-name="Line 21" y1="49" x2="43" transform="translate(463.164 58)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_22" data-name="Line 22" y1="37" x2="58" transform="translate(510.531 123.963)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_23" data-name="Line 23" y1="14" x2="63" transform="translate(536.531 210.283)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_24" data-name="Line 24" x1="67" transform="translate(547.531 290.345)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

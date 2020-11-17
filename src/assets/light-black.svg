@@ -1,0 +1,15 @@
+<svg id="light-black" xmlns="http://www.w3.org/2000/svg" width="375" height="336" viewBox="0 0 375 336">
+  <g id="Rectangle_76" data-name="Rectangle 76" transform="translate(53 37)" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="260" height="260" stroke="none"/>
+    <rect x="0.5" y="0.5" width="259" height="259" fill="none"/>
+  </g>
+  <g id="Rectangle_77" data-name="Rectangle 77" transform="translate(0 76)" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="260" height="260" stroke="none"/>
+    <rect x="0.5" y="0.5" width="259" height="259" fill="none"/>
+  </g>
+  <g id="Rectangle_78" data-name="Rectangle 78" transform="translate(115)" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="260" height="260" stroke="none"/>
+    <rect x="0.5" y="0.5" width="259" height="259" fill="none"/>
+  </g>
+  <path id="Icon_material-lightbulb-outline" data-name="Icon material-lightbulb-outline" d="M31.267,119.253a6.05,6.05,0,0,0,5.942,6.119H60.976a6.05,6.05,0,0,0,5.942-6.119v-6.119H31.267ZM49.093,3C26.157,3,7.5,22.212,7.5,45.83A43.186,43.186,0,0,0,25.325,80.951V94.779a6.05,6.05,0,0,0,5.942,6.119H66.918a6.05,6.05,0,0,0,5.942-6.119V80.951A43.186,43.186,0,0,0,90.685,45.83C90.685,22.212,72.028,3,49.093,3Zm0,12.237c16.4,0,29.709,13.706,29.709,30.593C78.8,55.8,32.693,15.237,49.093,15.237Z" transform="translate(140.5 102.629)" fill="none" stroke="#fff" stroke-width="1"/>
+</svg>

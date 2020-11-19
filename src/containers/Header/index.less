@@ -1,27 +1,62 @@
+@import '../../style/variables';
+
 .header {
   min-height: 100%;
-  padding: 24px;
   background: #fff;
 }
 
 .welcome-container {
   margin-top: 22em;
-  margin-left: 10em;
+  margin-left: 4em;
   opacity: 1;
   color: #07054e;
-}
-
-.welcome-title {
-  font-size: 50px;
+  overflow: hidden;
 }
 
 .welcome-text {
-  font-size: 30px;
+  font-size: 2.15em;
 }
 
 .img-grid {
   position: absolute;
-  top: -453px;
-  left: 801px;
   opacity: 1;
+}
+
+@media only screen and (max-width: @width-sm) {
+  .img-grid {
+    top: -100px;
+    left: 10em;
+  }
+}
+
+@media only screen and (min-width: @width-sm) and (max-width: @width-md) {
+  .welcome-text {
+    font-size: 1.5em;
+  }
+
+  .img-grid {
+    top: -300px;
+    left: 27em;
+    height: 1200px;
+  }
+}
+
+@media only screen and (min-width: @width-md) and (max-width: @width-lg) {
+  .img-grid {
+    top: -300px;
+    left: 50em;
+    height: 1200px;
+  }
+}
+
+@media only screen and (min-width: @width-lg) {
+  .welcome-container {
+    margin-left: 8em;
+  }
+
+  .img-grid {
+    top: -440px;
+    left: 57em;
+    height: 1493px;
+  }
 }

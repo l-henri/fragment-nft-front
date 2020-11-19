@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import { Layout, Typography } from 'antd';
+import { Grid, Layout, Typography } from 'antd';
 import { RowSwitch } from '@components/RowSwitch';
 import GrillImage from '@assets/little-grill.svg';
 import OptimisationImage from '@assets/optimisation.svg';
@@ -9,6 +9,7 @@ import SunImage from '@assets/sun.svg';
 
 const { Content: AntContent } = Layout;
 const { Title, Paragraph } = Typography;
+const { useBreakpoint } = Grid;
 
 interface Data {
   id: number;
@@ -22,12 +23,7 @@ const data: Array<Data> = [
     id: 0,
     title: 'Finding Path',
     imageSource: GrillImage,
-    content: `
-        The finding path The first step is the finding path. The original image is converted to
-        black and white and is then transformed into a list of points that the path must visit.
-        Looking at the picture, the darker parts or fragments simply mean that there are more points
-        to visit.
-  `,
+    content: `The finding path The first step is the finding path. The original image is converted to black and white and is then transformed into a list of points that the path must visit. Looking at the picture, the darker parts or fragments simply mean that there are more points to visit.`,
   },
   {
     id: 1,
@@ -50,9 +46,11 @@ const data: Array<Data> = [
 ];
 
 export const Content: React.FC = () => {
+  const { xs, lg } = useBreakpoint();
+
   return (
     <AntContent className="content">
-      <Title>The Project</Title>
+      <Title level={xs ? 2 : 1}>The Project</Title>
       <Paragraph className="content-text">
         Our project consists in tokenizing a picture that was taken during the ETHCC2019 event in
         Paris and make it available to anyone that access to this data.
@@ -65,8 +63,9 @@ export const Content: React.FC = () => {
       <Title className="content-title" level={2}>
         How does it work?
       </Title>
+
       {data.map(({ id, title, imageSource, content }, index) => {
-        const reverse = id % 2 === 1;
+        const reverse = lg === true && id % 2 === 1;
         const isLastItem = index === data.length - 1;
         return (
           <RowSwitch

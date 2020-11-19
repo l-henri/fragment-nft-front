@@ -1,12 +1,50 @@
-.content {
-  margin: 5em 5em 0 10em;
+@import '../../style/variables';
+
+@media only screen and (max-width: @width-sm) {
+  .content {
+    margin: 0 1em;
+  }
 }
 
-.content-title {
-  padding-top: 1.5em;
-  padding-bottom: 2em;
+@media only screen and (max-width: @width-sm-md) {
+  .content-text,
+  .paragraph {
+    font-size: 1.2em;
+  }
 }
 
-.content-text {
-  font-size: 1.5em;
+@media only screen and (min-width: @width-sm-md) {
+  .content-text,
+  .paragraph {
+    font-size: 1.5em;
+  }
+
+  .paragraph {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: @width-lg) {
+  .content {
+    margin: 0 4em;
+  }
+}
+
+@media only screen and (min-width: @width-lg) {
+  .content {
+    margin: 0 8em;
+  }
+}
+
+@media only screen and (max-width: @width-lg) {
+  .content-title {
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: @width-lg) {
+  .content-title {
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
 }

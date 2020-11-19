@@ -1,50 +1,104 @@
 @import '../../style/variables';
 
-@media only screen and (max-width: @width-sm) {
-  .content {
-    margin: 0 1em;
-  }
+@layout-margin-xs: 0 1em;
+@layout-margin-sm: 0 2em;
+@layout-margin-sm-md: 0 4em;
+@layout-margin-md: 0 4em;
+@layout-margin-lg: 0 8em;
+
+.content-title {
+  padding-bottom: 0.5em;
 }
 
-@media only screen and (max-width: @width-sm-md) {
+.content-text,
+.paragraph {
+  font-size: 1.5em;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar * {
+  margin-bottom: 25px;
+}
+
+.about-us {
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: @width-sm) {
+  .content {
+    margin: @layout-margin-xs;
+  }
+
   .content-text,
   .paragraph {
     font-size: 1.2em;
   }
+
+  .about-us {
+    padding-bottom: 0.5em;
+  }
 }
 
-@media only screen and (min-width: @width-sm-md) {
+@media only screen and (min-width: @width-sm) and (max-width: @width-sm-md) {
+  .content {
+    margin: @layout-margin-sm;
+  }
+
   .content-text,
   .paragraph {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .about-us {
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: @width-sm-md) and (max-width: @width-md) {
+  .content {
+    margin: @layout-margin-sm-md;
   }
 
   .paragraph {
     margin-top: 2em;
   }
-}
 
-@media only screen and (max-width: @width-lg) {
-  .content {
-    margin: 0 4em;
-  }
-}
-
-@media only screen and (min-width: @width-lg) {
-  .content {
-    margin: 0 8em;
-  }
-}
-
-@media only screen and (max-width: @width-lg) {
-  .content-title {
+  .about-us {
     padding-bottom: 1em;
   }
 }
 
+@media only screen and (min-width: @width-md) and (max-width: @width-lg) {
+  .content {
+    margin: @layout-margin-md;
+  }
+
+  .content-title {
+    padding-bottom: 1em;
+  }
+
+  .about-us {
+    padding-bottom: 2em;
+  }
+}
+
 @media only screen and (min-width: @width-lg) {
+  .content {
+    margin: @layout-margin-lg;
+  }
+
   .content-title {
     padding-top: 1em;
+    padding-bottom: 2em;
+  }
+
+  .about-us {
     padding-bottom: 2em;
   }
 }

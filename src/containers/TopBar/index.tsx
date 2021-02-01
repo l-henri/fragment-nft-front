@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './index.less';
-import { Layout, Tooltip, Space, Typography, Grid } from 'antd';
+import { Layout, Tooltip, Space, Typography, Grid, Button } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
-import { ButtonText } from '@components/ButtonText';
+import { ButtonLink } from '@components/ButtonLink';
 import MoonIcon from '@assets/moon.svg';
 import SunIcon from '@assets/little-sun-black.svg';
 import AccountIcon from '@assets/account.svg';
@@ -26,19 +26,24 @@ export const TopBar: React.FC = () => {
   return (
     <Header className="top-bar">
       {!lg && <MenuOutlined />}
-      <ButtonText className="title">ETHCC Memorabilia 2019</ButtonText>
+      <ButtonLink className="title" to="/">
+        ETHCC Memorabilia 2019
+      </ButtonLink>
       {lg && (
         <>
-          <ButtonText className="btn">Home</ButtonText>
-          <ButtonText className="btn">Fragments</ButtonText>
+          <ButtonLink className="btn" to="/">
+            Home
+          </ButtonLink>
+          <ButtonLink className="btn" to="/fragments">
+            Fragments
+          </ButtonLink>
           <Space className="right-items" size="large">
-            <ButtonText size="small" onClick={toggleTheme}>
-              {dark ? (
-                <img src={SunIcon} alt="light icon" />
-              ) : (
-                <img src={MoonIcon} alt="dark icon" />
-              )}
-            </ButtonText>
+            <Button
+              size="small"
+              type="text"
+              onClick={toggleTheme}
+              icon={<img src={dark ? SunIcon : MoonIcon} alt={dark ? 'light-icon' : 'dark-icon'} />}
+            />
             <Tooltip title={address} placement="bottomLeft">
               <img src={AccountIcon} alt="account" />
               <Text className="account-text">{addressEllipsed}</Text>

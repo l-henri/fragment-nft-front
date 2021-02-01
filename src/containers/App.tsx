@@ -1,17 +1,26 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.less';
 import { Layout } from 'antd';
 import { TopBar } from './TopBar';
-import { Header } from './Header';
-import { Content } from './Content';
+import { LandingPage } from './LandingPage';
+import { FragmentsPage } from './FragmentsPage';
 
 const App: React.FC = () => {
   return (
-    <Layout className="layout">
-      <TopBar />
-      <Header />
-      <Content />
-    </Layout>
+    <Router>
+      <Layout className="layout">
+        <TopBar />
+        <Switch>
+          <Route exact path="/">
+            <LandingPage />
+          </Route>
+          <Route exact path="/fragments">
+            <FragmentsPage />
+          </Route>
+        </Switch>
+      </Layout>
+    </Router>
   );
 };
 

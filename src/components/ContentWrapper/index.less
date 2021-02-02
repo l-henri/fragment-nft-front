@@ -1,0 +1,41 @@
+@import '../../style/variables';
+
+@layout-margin-xs: 0 1em;
+@layout-margin-sm: 0 2em;
+@layout-margin-sm-md: 0 4em;
+@layout-margin-md: 0 4em;
+@layout-margin-lg: 0 8em;
+
+.antd-content {
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: @width-sm) {
+  .antd-content {
+    margin: @layout-margin-xs;
+  }
+}
+
+@media only screen and (min-width: @width-sm) and (max-width: @width-sm-md) {
+  .antd-content {
+    margin: @layout-margin-sm;
+  }
+}
+
+@media only screen and (min-width: @width-sm-md) and (max-width: @width-md) {
+  .antd-content {
+    margin: @layout-margin-sm-md;
+  }
+}
+
+@media only screen and (min-width: @width-md) and (max-width: @width-lg) {
+  .antd-content {
+    margin: @layout-margin-md;
+  }
+}
+
+@media only screen and (min-width: @width-lg) {
+  .antd-content {
+    margin: @layout-margin-lg;
+  }
+}

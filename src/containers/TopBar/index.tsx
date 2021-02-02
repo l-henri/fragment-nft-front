@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.less';
 import { Layout, Tooltip, Space, Typography, Grid, Button } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
-import { ButtonLink } from '@components/ButtonLink';
+import { ButtonLink } from '@components';
 import MoonIcon from '@assets/moon.svg';
 import SunIcon from '@assets/little-sun-black.svg';
 import AccountIcon from '@assets/account.svg';

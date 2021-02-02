@@ -1,11 +1,5 @@
 @import '../../../style/variables';
 
-@layout-margin-xs: 0 1em;
-@layout-margin-sm: 0 2em;
-@layout-margin-sm-md: 0 4em;
-@layout-margin-md: 0 4em;
-@layout-margin-lg: 0 8em;
-
 .content-title {
   padding-bottom: 0.5em;
 }
@@ -31,10 +25,6 @@
 }
 
 @media only screen and (max-width: @width-sm) {
-  .content {
-    margin: @layout-margin-xs;
-  }
-
   .content-text,
   .paragraph {
     font-size: 1.2em;
@@ -46,10 +36,6 @@
 }
 
 @media only screen and (min-width: @width-sm) and (max-width: @width-sm-md) {
-  .content {
-    margin: @layout-margin-sm;
-  }
-
   .content-text,
   .paragraph {
     font-size: 1.3em;
@@ -61,10 +47,6 @@
 }
 
 @media only screen and (min-width: @width-sm-md) and (max-width: @width-md) {
-  .content {
-    margin: @layout-margin-sm-md;
-  }
-
   .paragraph {
     margin-top: 2em;
   }
@@ -75,10 +57,6 @@
 }
 
 @media only screen and (min-width: @width-md) and (max-width: @width-lg) {
-  .content {
-    margin: @layout-margin-md;
-  }
-
   .content-title {
     padding-bottom: 1em;
   }
@@ -89,10 +67,6 @@
 }
 
 @media only screen and (min-width: @width-lg) {
-  .content {
-    margin: @layout-margin-lg;
-  }
-
   .content-title {
     padding-top: 1em;
     padding-bottom: 2em;

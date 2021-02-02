@@ -1,12 +1,10 @@
 import React from 'react';
 import './index.less';
-import { Grid, Layout, Row, Col, Typography } from 'antd';
-import { RowSwitch } from '@components/RowSwitch';
-import { Avatar } from '@components/Avatar';
+import { Grid, Row, Col, Typography } from 'antd';
+import { ContentWrapper, RowSwitch, Avatar } from '@components';
 import { contentData } from './content-data';
 import { avatarData } from './avatar-data';
 
-const { Content: AntContent } = Layout;
 const { Title, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
 
@@ -14,7 +12,7 @@ export const Content: React.FC = () => {
   const { xs, lg } = useBreakpoint();
 
   return (
-    <AntContent className="content">
+    <ContentWrapper>
       <Title level={xs ? 2 : 1}>The Project</Title>
       <Paragraph className="content-text">
         Our project consists in tokenizing a picture that was taken during the ETHCC2019 event in
@@ -54,6 +52,6 @@ export const Content: React.FC = () => {
           </Col>
         ))}
       </Row>
-    </AntContent>
+    </ContentWrapper>
   );
 };
